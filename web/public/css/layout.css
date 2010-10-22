@@ -1,0 +1,115 @@
+/*
+	11/05/2010
+	Author CSS: Filipe Dantas
+	Author EMAIL: filipegdantas@gmail.com	
+*/
+
+* {margin:0;padding:0;list-style:none;text-decoration:none}
+body{background:#fdffe1 url(../imagens/principal/bg_body.jpg) repeat-x; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
+a{text-decoration:none; color:#000}
+a:hover{color:#000; text-decoration:underline}
+a img{border:0}
+h1{font-size:20px; color:#0e355b; font-style:italic; margin:0 0 10px 0}
+h2{font-size:16px; color:#0e355b; margin:0 0 10px 0}
+h3{font-size:18px; color:#0e355b; margin:0 0 10px 0}
+h3 a{color:#333}
+p{line-height:17px; font-size:14px; color:#000; margin:0 0 10px 0}
+small{font-size:11px; font-weight:bold; color:#fff}
+p.mais{width:135px; height:20px; background:url(../imagens/principal/bg_mais.jpg) no-repeat; float:right; padding:5px 0 0 10px; font-size:12px; font-weight:bold}
+p.mais a{color:#333}
+
+/* Classes */
+.none {display:none}
+.clearFix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.w100 {width:100%}
+
+
+/*------------CONTAINER------------*/
+#container{width:990px; margin:0 auto; position:relative}
+#header{width:100%; height:139px; background:url(../imagens/principal/bg_header.jpg) no-repeat center top; padding-top:15px;}
+/*------------LOGOMARCA------------*/
+h1 {background:url(../imagens/principal/logomarca.png) no-repeat; width:171px; text-indent:-99999px; font-size:0; margin:0 auto; behavior:url("iepngfix.htc")}
+h1 a {display:block; height:99px;}
+
+div#port_slide{width:100%; float:left; margin-top:60px; height:375px}
+	#noticia_rolante{width:990px; padding:20px 10px; position:relative}
+				#noticia_rolante .jcarousel-skin-tango{width:990px}
+				#noticia_rolante .jcarousel-skin-tango li{width:990px; margin:0 5px; float:left; display:inline}
+				#noticia_rolante .jcarousel-skin-tango li img{width:342px; height:260px; float:left; margin:0 90px 0 30px}
+				#noticia_rolante .jcarousel-skin-tango li h2 a{ font-size:40px; color:#78992a; font-variant:normal}
+				#noticia_rolante .jcarousel-skin-tango li p{padding-right:30px; line-height:25px}
+				#noticia_rolante .jcarousel-skin-tango li p a{font-size:24px; color:#666666}
+			/*Horizontal Buttons*/
+			#noticia_rolante a.next{position:absolute; top:120px; left:390px; width:37px; height:42px; cursor:pointer;  background: url(../imagens/principal/setas.gif) no-repeat 0 -53px; text-indent:-9999px; font-size:0}
+			#noticia_rolante a.prev{position:absolute; top:120px; left:5px; width:37px; height:42px; cursor:pointer; text-indent:-9999px; font-size:0; background: url(../imagens/principal/setas.gif) no-repeat }
+		
+
+/* {behavior:url(js/iepngfix.htc)}*/ /*png para ie6*/
+.ie6 #principal {height:100%}
+
+
+/* MENUS */
+#menu {width:100%; float:left; height:220px; position:relative; margin-bottom:68px}
+#menu li {width:98px; float:left; margin:15px 10px 0 10px; display:inline}
+#menu li a {background:url(../imagens/principal/menu.gif) no-repeat; width:98px; display:block; text-indent:-99999px; font-size:0}
+#menu li a.noticia {width:87px; height:20px; background-position:0 0}
+#menu li a.noticia:hover {background-position:0 -25px}
+#menu li a.empresa {width:89px;  height:23px; background-position:0 -49px}
+#menu li a.empresa:hover {background-position:0 -77px}
+#menu li a.solucoes {height:23px; background-position:0 -106px}
+#menu li a.solucoes:hover {background-position:0 -134px}
+#menu li a.portfolio {width:89px; height:23px; background-position:0 -161px}
+#menu li a.portfolio:hover {background-position:0 -186px}
+#menu li a.contato {width:93px; height:23px; background-position:0 -212px}
+#menu li a.contato:hover {background-position:0 -239px}
+
+.tit{width:425px; height:91px; background:url(../imagens/principal/noticia.gif) no-repeat; color:#fff; clear:both; position:absolute; left:0; bottom:-10px; font-size:0; text-indent:-9999px}
+img.seta_baixo{width:36px; height:22px; position:absolute; top:56px; left:30px}
+/* content */
+#content {width:100%; padding-bottom:20px}
+
+/* COLUNAS DA INDEX */
+div#col_esq{float:left; width:327px; margin-right:40px}
+	#box_not{width:297px; background:#adbc7a; padding:40px 15px 20px 15px; margin-bottom:35px; position:relative}
+		img.seta_not{width:34px; height:22px; position:absolute; left:45px; top:0; border:0}
+		#box_not img.not{width:272px; height:128px; border:10px solid #fff; margin-bottom:20px}
+		#box_not p a{color:#393a37}
+	ul#list_esq{width:100%}
+		#list_esq li{width:100%; margin-bottom:20px}
+		#list_esq li small{color:#71902c}
+div#col_center{float:left; width:282px}
+	#twitter{width:100%}
+	#twitter h2{height:43px; background:url(../imagens/principal/tit_twitter.gif) no-repeat; font-size:0; text-indent:-9999px}
+	#twitter h4{font-size:20px; border-bottom:1px solid #666; margin-bottom:10px}
+	#twitter h4 a{color:#666}
+	#twitter h4 a:hover{text-decoration:none; color:#000}
+	#twitter li{font-size:14px; border-bottom:1px solid #666; padding-bottom:15px; margin-bottom:10px} 
+	#twitter li a{color:#88945f}
+div#col_dir{float:right; width:268px}
+	.box{width:100%; margin-bottom:20px}
+	.box p{width:180px; margin-left:50px}
+	.box h2.planning{width:100%; height:45px; background:url(../imagens/principal/planning.gif) no-repeat; text-indent:-9999px; font-size:0}
+	.box h2.erp{width:100%; height:45px; background:url(../imagens/principal/erp.gif) no-repeat; text-indent:-9999px; font-size:0}
+
+	#newsletter{width:100%; float:left; margin-top:20px}
+	#newsletter h2{width:100%; height:43px; background:url(../imagens/principal/tit_newsletter.gif) no-repeat; margin:0; text-indent:-9999px; font-size:0}
+	#newsletter form #bg{padding:10px 10px 40px 10px; background:#b4c47c}
+	#newsletter form p{color:#fff; font-size:18px; line-height:20px; margin-bottom:34px}
+	#newsletter form input{width:238px; line-height:17px; height:35px; font-size:16px; border:0; padding:5px 0 0 10px; color:#71902c}
+	#newsletter form input.enviar{width:98px; height:23px; background:url(../imagens/principal/tit_enviar.gif) no-repeat; cursor:pointer; float:right; margin-top:20px}
+
+/* INTERNAS */
+div#col_esq_int{width:676px; height:200px; background:red; float:left}
+
+/* FORMS */
+fieldset{margin:0;padding:0;border:none}
+form *{font-family:Arial, Helvetica, sans-serif;font-size:11px}
+
+/* RODAPE */
+#footer{width:100%; background:#fff; height:168px; border-top:1px solid #404040; float:left; clear:both}
+	#cont_footer{width:990px; margin:0 auto; height:130px; padding-top:20px; position:relative} 
+	#cont_footer ul li{float:left; margin:0 20px; display:inline}
+	#cont_footer p{float:right; font-size:16px; line-height:22px; font-weight:normal; margin-top:20px; color:#666}
+	#cont_footer p a{color:#8da94b}
+	#cont_footer img.seta_cinza{position:absolute; top:0; right:180px}
+

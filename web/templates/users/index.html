@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>OneTime Tecnologia</title>
+    <link href="/public/css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="/" title="OneTime Tecnologia">OneTime Tecnologia</a></h1>
+		<div id="menu">
+			<ul>
+				<li><a href="/empresa">Empresa</a></li>
+				<li><a href="/noticias">Not&iacute;cias</a></li>				
+				<li><a href="/solucoes">Solu&ccedil;&otilde;es</a></li>
+				<li><a href="/cliente">Clientes</a></li>
+				<li><a href="/contato">Contato</a></li>
+			</ul>
+		</div>
+	</div>
+	       <div id="content">
+	        	<div id="col_esq">
+					{% for destaque in destaques %}
+	            	<div id="box_not">
+	                	<!--img src="imagens/principal/seta_verde.jpg" alt="" class="seta_not" /-->
+	                	<small>{{destaque.date}}</small>
+	                    <h3><a href="#">{{destaque.title}}</a></h3>
+	                    <a href="/post/{{destaque.id}}" title="{{destaque.title}}"><!--img src="imagens/apagar/img_not.jpg" alt="{{destaque.title}}" class="not" /--></a>
+	                    <p><a href="/post/{{destaque.id}}" title="{{destaque.title}}">{{destaque.title}}</a></p>
+	                </div>
+					{% endfor %}
+	                <ul id="list_esq">
+						{% for post in posts %}
+	                	<li>
+	                    	<small>{{post.date}}</small>
+	                    	<h3><a href="/post/{{post.id}}/" title="">{{post.title}}</a></h3>
+	                    </li>
+						{% endfor %}
+	                </ul>
+	                <p class="mais"><a href="#" title="">mais not&iacute;cias</a></p>
+	            </div>
+			</div>
+			<div id="col_center">
+            	<div id="twitter">
+                	<h2>Twitter</h2>
+                    <h4><a href="#" title="">&Uacute;ltimos posts</a></h4>
+                    <ul>
+					{% for s in timelime %}
+                    	<li>{{s}}</li>
+					{% endfor %}
+                    </ul>
+                    <p class="mais"><a href="http://www.twitter.com/theoziran" title="">mais tweets</a></p>
+                </div>
+            </div>
+        		
+		</div>
+</body>
+</html>
